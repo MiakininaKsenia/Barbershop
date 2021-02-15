@@ -5,25 +5,34 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Barbershop</title>
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 	<link rel="stylesheet" href="css/app.min.css">
 </head>
+
 
 <body>
 	<div class="wrapper">
 		<header>
 			<div class="header-container">
-				<ul class="header-container__list">
-					<li class="header-container__list__item"><a href="#about">Главная</a></li>
-					<li class="header-container__list__item"><a href="">Информация</a></li>
-					<li class="header-container__list__item"><a href="">Новости</a></li>
-					<li class="header-container__list__item"><a href="">Прайс-лист</a></li>
-					<li class="header-container__list__item"><a href="">Магазин</a></li>
-					<li class="header-container__list__item"><a href="">Контакты</a></li>
-					<li class="header-container__list__item__last"><a href=""><img src="images/dest/log-in.png" alt="">
-							Вход</a></li>
-				</ul>
+				<div class="container ">
+					<ul class="header-container__list navigation">
+						<li class="header-container__list__item"><a href="#about">Главная</a></li>
+						<li class="header-container__list__item"><a href="#info">Информация</a></li>
+						<li class="header-container__list__item"><a href="news.html">Новости</a></li>
+						<li class="header-container__list__item"><a href="price.html">Прайс-лист</a></li>
+						<li class="header-container__list__item"><a href="shop.html">Магазин</a></li>
+						<li class="header-container__list__item"><a href="#contacts">Контакты</a></li>
+						<li class="header-container__list__item__last"><a href=""><img src="images/dest/log-in.png" alt="">
+								Вход</a></li>
+					</ul>
+				</div>
+				<span class="menu-button">
+					<hr>
+				</span>
+				<a href="" class="mobile-link"><img class="mobile-img" src="images/dest/log-in.png" alt="">
+					Вход</a>
 			</div>
-			<div class="container" #about>
+			<div class="container" id="about">
 				<div class="logo">
 					<img src="images/dest/BORODINSKI-Logo.png" alt="">
 				</div>
@@ -65,22 +74,139 @@
 						</div>
 						<div class="infoBlock__box">
 							<p class="infoBlock__text">
-								В НАШЕЙ КОМАНДЕ ПОПОЛНЕНИЕ, БОРИС «БРИТВА» СТРИГУНЕЦ, ОБЛАДЕТЕЛЬ МНОЖЕТСВА ТИТУЛОВ И НАГРАД ПОПОЛНИЛ НАШИ СТРОЙНЫЕ РЯДЫ
+								В НАШЕЙ КОМАНДЕ ПОПОЛНЕНИЕ, БОРИС «БРИТВА» СТРИГУНЕЦ, ОБЛАДЕТЕЛЬ МНОЖЕТСВА ТИТУЛОВ И НАГРАД
+								ПОПОЛНИЛ НАШИ СТРОЙНЫЕ РЯДЫ
 							</p>
 							<span class="infoBlock__date">
 								19 сентября
 							</span>
 						</div>
-						<a href="news.html" class="btn__large">Новости</a>
+						<a href="news.html" class="btn--large">все новости</a>
 					</div>
-					<div class="col--50"></div>
+					<div class="col--50">
+						<h4 class="title--30">фотогалерея</h4>
+						<div class="slider">
+							<div class="swiper-container">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide"><img src="images/dest/slide.png" alt=""></div>
+									<div class="swiper-slide"><img src="images/dest/slide.png" alt=""></div>
+									<div class="swiper-slide"><img src="images/dest/slide.png" alt=""></div>
+									<div class="swiper-slide"><img src="images/dest/slide.png" alt=""></div>
+								</div>
+								<div class="swiper-button-prev"><a href="" class="btn--large__pagination">назад</a>
+								</div>
+								<div class="swiper-button-next"><a href="" class="btn--large">вперед</a>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<img class="infoBlock__divider" src="images/dest/Layer.png" alt=""></img>
 				</div>
-				<img class="infoBlock__divider" src="images/dest/Layer.png" alt=""></img>
 			</div>
 		</div>
+		<div class="infoBlock" id="info">
+			<div class="infoBlock__container">
+				<div class="row">
+					<div class="col--50__third">
+						<h4 class="title--30">КОНТАКТНАЯ ИНФОРМАЦИЯ</h4>
+						<div class="infoBlock__box">
+							<p class="infoBlock__text">
+								BARBERSHOP «BORODINSKI»
+							</p>
+							<p class="infoBlock__text">
+								АДРЕС: Г. МОСКВА, УЛ. СОБАКИ ПАВЛОВА, Д. 13
+							</p>
+							<p class="infoBlock__text">
+								ТЕЛЕФОН: <a href="tel:+749566602666" class="phone">+7 (495) 666-02-666</a>
+							</p>
+						</div>
+						<div class="infoBlock__box">
+							<p class="infoBlock__text">
+								ВРЕМЯ РАБОТЫ:
+							</p>
+							<p class="infoBlock__text">
+								ПН — ПТ: С 10:00 ДО 22:00
+							</p>
+							<p class="infoBlock__text">
+								СБ — ВС: С 10:00 ДО 19:00
+							</p>
+						</div>
+						<a href="" class="btn--large__pagination">как проехать</a>
+						<a href="" class="btn--large">обратная связь</a>
+					</div>
+					<div class="col--50">
+						<h4 class="title--30">записаться:</h4>
+						<p class="infoBlock__text">УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ С ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ
+						</p>
+						<form action="">
+							<input class="btn--large__form" type="text" name="date" placeholder="ДАТА" required>
+							<input class="btn--large__form" type="text" name="time" placeholder="ВРЕМЯ" required>
+							<input class="btn--large__form" type="text" name="name" placeholder="ВАШЕ ИМЯ" required>
+							<input class="btn--large__form" type="tel" name="phone" placeholder="ТЕЛЕФОН" required>
+							<button class="btn--fullwidth">ОТПРАВИТЬ</button>
+						</form>
+					</div>
+				</div>
+			</div>
+			<img class="infoBlock__divider" src="images/dest/Layer.png" alt=""></img>
+		</div>
+		<div class="modal">
+			<div class="modal__wrapper">
+				<div class="modal__window">
+					<h5 class="title">Личный кабинет</h5>
+					<p class="subtitle-p">Ввеедите пожалуйста свой логин и пароль <br>
+						Если вы забыли пароль
+					</p>
+					<form action="" class="form ">
+						<input type="text" name="login" placeholder="Логин" class="input--login">
+						<input type="password" name="password" placeholder="Пароль" class="input--password">
+						<div class="form__row">
+							<div class="form__column">
+								<input type="checkbox" id="rememmber" value="remember">
+								<label for="remember" class="labe">Запомните меня</label>
+							</div>
+							<div class="form__column">
+								<a class="forgot" href="#">Я забыл пароль!</a>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<footer id="contacts">
+			<div class="container">
+				<div class="footer">
+					<div class="footer__adress">
+						<p class="infoBlock__text">
+							BARBERSHOP «BORODINSKI»
+						</p>
+						<p class="infoBlock__text">
+							АДРЕС: Г. МОСКВА, УЛ. СОБАКИ ПАВЛОВА, Д. 13
+						</p>
+						<p class="infoBlock__text">
+							ТЕЛЕФОН: <a href="tel:+749566602666" class="phone">+7 (495) 666-02-666</a>
+						</p>
+					</div>
+					<div class="footer__links">
+						<p>давайте дружить!</p>
+						<div class="socials">
+							<a class="img" href=""><img src="images/dest/v.png" alt="vk"></a>
+							<a class="img" href=""><img src="images/dest/f.png" alt="facebook"></a>
+							<a class="img" href=""><img src="images/dest/i.png" alt="instagram"></a>
+						</div>
+					</div>
+					<div class="footer__design">
+						<p> Дизайн сайта:</p>
+						<p class="designer">Lemon School</p>
+					</div>
+				</div>
+			</div>
+		</footer>
 	</div>
 
 
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 	<script src="js/app.min.js"></script>
 </body>
 

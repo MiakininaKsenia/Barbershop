@@ -31,9 +31,15 @@
    top: 30px;
    left: 85%;
 }
+
 .header-container__list__item__last img {
    margin: 0 15px 0 0;
-   
+}
+.menu-button {
+   display: none;
+}
+.mobile-link {
+   display: none;
 }
 .logo {
    text-align: center;
@@ -60,4 +66,3 @@
    line-height: 1.714;
    text-align: center;
 }
-
