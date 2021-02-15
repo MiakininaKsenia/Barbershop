@@ -1,0 +1,14 @@
+.swiper-slide img{
+   border: 7px solid $white;
+   margin: 15px 0 25px 0;
+}
+.swiper-button-prev:after, .swiper-container-rtl .swiper-button-next:after {
+   content: '';
+}
+.swiper-button-next:after, .swiper-container-rtl .swiper-button-prev:after {
+   content: '';
+}
+.swiper-button-next, .swiper-button-prev {
+   position: static;
+   display: inline;
+}
