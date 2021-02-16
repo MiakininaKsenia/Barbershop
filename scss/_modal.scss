@@ -23,7 +23,7 @@
       padding: 52px 80px 60px;
       max-height: 90%;
       max-width: 90%;
-      overflow-y: auto;
+      position: relative;
       .title {
          font-size: 30px;
          margin: 0;
@@ -35,11 +35,20 @@
          &:last-child {
             text-align: right;
             text-decoration: underline;
-            
          }
-         .forgot{
+         .forgot {
             color: $black;
          }
       }
+   }
+   &__close {
+      position: absolute;
+      height: 21px;
+      width: 21px;
+      left: calc(100% + 50px);
+      top: 55px;
+      background: url("../images/dest/close.png");
+      background-size: 100% 100%;
+      cursor: pointer;
    }
 }
