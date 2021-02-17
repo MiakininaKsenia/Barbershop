@@ -75,14 +75,13 @@
       @extend .input;
       background-image: url(../images/dest/login.png);
       background-position: calc(100% - 13px) 50%;
-      max-width: 300px;
       margin: 0 0 10px 0;
    }
    &--password {
       @extend .input;
       background-image: url(../images/dest/pass.png);
       background-position: calc(100% - 13px) 50%;
-      max-width: 300px;
+      
    }
 }
 .form {
@@ -90,6 +89,7 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+      margin: 15px 0;
 
       @include screen(960) {
          flex-wrap: wrap;
@@ -112,7 +112,7 @@ input {
             content: "";
             position: absolute;
             left: 0;
-            top: 15px;
+            top: 4px;
             width: 16px;
             height: 16px;
             border: 2px solid $black;

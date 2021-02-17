@@ -89,9 +89,9 @@
    }
    hr {
       width: 50%;
-      height: 1px;
+      height: 3px;
       background: $white;
-      margin: 40% 0 0 0;
+      margin: 35% 0 0 0;
    }
    .header-container__list__item__last {
       display: none;
@@ -200,6 +200,10 @@
    .swiper-slide img {
       margin: 0;
    }
+   .modal__window {
+      padding: 20px;
+   }
+   
    .btn--fullwidth {
       width: 70%;
   }
@@ -254,4 +258,8 @@
    .btn__large__pagination {
       min-width: 100px;
    }
+   .form__column{
+      font-size: 10px;
+   }
+   input[type=checkbox]+label:before {top: 0;}
 }

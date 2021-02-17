@@ -31,6 +31,7 @@
       .subtitle-p {
          margin: 30px 0;
       }
+      
       .form__column {
          &:last-child {
             text-align: right;
@@ -39,6 +40,7 @@
          .forgot {
             color: $black;
          }
+         
       }
    }
    &__close {

@@ -27,6 +27,7 @@ $(document).ready(function () {
 		const LoginModal = $('.modal__window');
 		if (!LoginModal.is(event.target) && LoginModal.has(event.target).length === 0) {
 			$('.modal').fadeOut(400);
-		}	
-	})
+		}
+	});
+
 });
